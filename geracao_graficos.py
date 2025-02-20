@@ -5,15 +5,15 @@ import scipy.stats as stats
 # Dados coletados
 
 mspt_data = {
-    "5s": [1.6, 1.9, 1.4, 1.8, 1.6, 1.8, 2.3, 0.6, 0.5, 1.8],
-    "10s": [0.8, 0.9, 1.2, 0.9, 1.1, 0.9, 1.1, 0.8, 0.5, 0.9],
-    "1m": [0.1, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2]
+    "5s": [1.6, 1.9, 1.4, 1.8, 1.6, 1.8, 2.3, 0.6, 0.5, 1.8], // Aqui você coloca seus dados referentes ao campo avg de mspt referentes a 5 segundos
+    "10s": [0.8, 0.9, 1.2, 0.9, 1.1, 0.9, 1.1, 0.8, 0.5, 0.9], // Aqui você coloca seus dados referentes ao campo avg de mspt referentes a 10 segundos
+    "1m": [0.1, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2] // Aqui você coloca seus dados referentes ao campo avg de mspt referentes a 1 minuto
 }
 
-cpu_usage = [71.4, 48.8, 37.1, 30.3, 72.6, 49.3, 37.4, 30.4, 72.9, 49.8, 37.8, 30.8]
-ram_usage = [1644, 1647, 1647, 1652, 1645, 1648, 1648, 1650, 1603, 1607, 1607, 1607]
-disk_usage = [37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37]
-latency = [0.019, 0.016, 0.015, 0.071, 0.015, 0.016, 0.017, 0.014, 0.015, 0.016, 0.016, 0.017]
+cpu_usage = [71.4, 48.8, 37.1, 30.3, 72.6, 49.3, 37.4, 30.4, 72.9, 49.8, 37.8, 30.8] // Coloque seus dados referentes ao uso de cpu 
+ram_usage = [1644, 1647, 1647, 1652, 1645, 1648, 1648, 1650, 1603, 1607, 1607, 1607] // Coloque seus dados referentes ao uso de memória RAM 
+disk_usage = [37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37] // Coloque seus dados referentes ao uso de disco
+latency = [0.019, 0.016, 0.015, 0.071, 0.015, 0.016, 0.017, 0.014, 0.015, 0.016, 0.016, 0.017] // Coloque seus dados referentes a latência
 
 # Função para calcular média e intervalo de confiança (95%)
 def calcular_ic(data):
